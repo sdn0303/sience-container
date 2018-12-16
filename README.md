@@ -2,7 +2,7 @@
 ### Set up 
 First clone this repository.
 ```commandline
-git clone https://github.com/da-dev/sience-container.git
+git clone https://github.com/sdn0303/sience-container.git
 ```
 
 Move to project root
