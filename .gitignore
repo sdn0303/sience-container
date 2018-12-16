@@ -1,0 +1,17 @@
+# Files
+*.csv
+*.DS_Store
+*.htm
+*.html
+*.ipynb
+*.pkl
+*.pk
+*.txt
+*.xlsm
+*.xlsx
+!*.gitkeep
+
+# Directory
+.idea
+notebooks/.ipynb_checkpoints
+

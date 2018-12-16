@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  jupyter_project:
+    build: server
+    volumes:
+      - ./notebooks:/opt/notebooks
+    ports:
+      - 8888:8888
+    command: jupyter notebook --allow-root --notebook-dir=/opt/notebooks --ip='0.0.0.0' --port=8888
