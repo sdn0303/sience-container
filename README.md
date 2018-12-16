@@ -2,12 +2,12 @@
 ### Set up 
 First clone this repository.
 ```commandline
-git clone https://github.com/da-dev/docker-data-science.git
+git clone https://github.com/da-dev/sience-container.git
 ```
 
 Move to project root
 ```commandline
-cd docker-data-science
+cd sience-container
 ```
 
 Build container
@@ -43,9 +43,6 @@ curl -L https://github.com/docker/compose/releases/download/1.6.2/docker-compose
 ```commandline
 chmod +x /usr/local/bin/docker-compose
 ```
-
-#### Install [Docker for windows](https://docs.docker.com/compose/install/)
-Windowsの方は下記参考サイトの手順を参考にインストールしてください
 
 ・参考サイト
   - [Docker for Windows のインストール](http://docs.docker.jp/windows/step_one.html)
