@@ -3,6 +3,7 @@ MAINTAINER David Soichi Nakahashi <nakahashi@data-artist.com>
 
 # Setup python packeges
 COPY ./Pipfile Pipfile
+COPY ./Pipfile.lock Pipfile.lock
 RUN pip3 install pipenv
 RUN pipenv install --system
 
