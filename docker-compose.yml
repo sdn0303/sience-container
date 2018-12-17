@@ -2,7 +2,7 @@ version: '3'
 
 services:
   jupyter_project:
-    build: server
+    build: container
     volumes:
       - ./notebooks:/opt/notebooks
     ports:
