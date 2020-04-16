@@ -1,5 +1,5 @@
-FROM python:3.6
-MAINTAINER David Soichi Nakahashi <nakahashi@data-artist.com>
+FROM python:3.8-slim
+MAINTAINER David Soichi Nakahashi <sdn03.tech@gmail.com>
 
 # Setup python packeges
 COPY ./Pipfile Pipfile
