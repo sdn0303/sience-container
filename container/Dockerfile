@@ -1,4 +1,4 @@
-FROM python:3.6
+FROM python:3.8-slim
 MAINTAINER David Soichi Nakahashi <sdn03.tech@gmail.com>
 
 # Setup python packeges
