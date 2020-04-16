@@ -10,7 +10,7 @@
 *.xlsm
 *.xlsx
 !*.gitkeep
-
+.python-version
 # Directory
 .idea
 notebooks/.ipynb_checkpoints
