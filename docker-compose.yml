@@ -2,7 +2,9 @@ version: '3.7'
 
 services:
   notebooks:
-    build: container
+    build:
+      dockerfile: container/Dockerfile
+      context: .
     platform: linux/amd64
     volumes:
       - ./notebooks:/opt/notebooks

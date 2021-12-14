@@ -1,1 +1,26 @@
-./container/Pipfile
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+numpy = "*"
+pandas = "*"
+notebook = "*"
+jupyter = "*"
+ipython = "*"
+seaborn = "*"
+matplotlib = "*"
+requests = "*"
+pandera = "*"
+tqdm = "*"
+janome = "*"
+beautifulsoup4 = "*"
+scipy = "*"
+torch = "*"
+torchvision = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"

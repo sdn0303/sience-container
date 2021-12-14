@@ -1,10 +1,24 @@
-FROM python:3.8-slim
+FROM nvidia/cuda:11.0.3-runtime-ubuntu18.04
 MAINTAINER David Soichi Nakahashi <sdn03.tech@gmail.com>
+
+ENV LC_ALL=C.UTF-8
+ENV LANG=C.UTF-8
 
 # Setup python packeges
 COPY ./Pipfile Pipfile
 COPY ./Pipfile.lock Pipfile.lock
-RUN pip3 install pipenv
+
+RUN set -ex \
+    && apt-get update \
+    && apt-get -y upgrade \
+    && apt-get install -y tzdata
+
+ENV TZ=Asia/Tokyo
+RUN apt-get -y install git vim wget curl software-properties-common
+RUN add-apt-repository ppa:deadsnakes/ppa
+RUN apt-get install -y python3.9 python3.9-distutils python3-pip
+RUN python3.9 -m pip install -U --upgrade pip \
+    && python3.9 -m pip install -U pip wheel setuptools pipenv
 RUN pipenv install --system
 
 # Configuring access to Jupyter
